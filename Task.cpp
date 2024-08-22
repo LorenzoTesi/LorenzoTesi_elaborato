@@ -3,25 +3,16 @@
 //
 #include "Task.h"
 
-Task::Task(const std::string& description) : description(description), completed(false) {}
+Task::Task(const std::string& description) : description(description) {}
 
 std::string Task::GetDescription() const {
     return description;
 }
 
-bool Task::IsCompleted() const {
-    return completed;
+void Task::SetTime(std::string t){
+    time = t;
 }
 
-void Task::MarkCompleted() {
-    completed = true;
-}
-
-std::string Task::GetState() const {
-    std::string state=completed?"  [Completata]":"  [Da fare]";
-    return state;
-}
 std::string Task::WriteString() const {
-
-    return description + " " + GetState();
+    return GetDescription()+" [Da Fare]";
 }

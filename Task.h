@@ -10,17 +10,15 @@
 class Task {
 private:
     std::string description;
-    bool completed;
-
+    std::string time;
 public:
     Task(const std::string& description);
 
     std::string GetDescription() const;
-    bool IsCompleted() const;
-    void MarkCompleted();
-    std::string WriteString() const;
-    std::string GetState()const;
 
+    void SetTime(std::string time);
+
+    std::string WriteString() const;
 
 };
 
