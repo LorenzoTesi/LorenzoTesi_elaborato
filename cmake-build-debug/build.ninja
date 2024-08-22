@@ -61,6 +61,12 @@ build CMakeFiles/TesiLaboratorio.dir/Task.cpp.obj: CXX_COMPILER__TesiLaboratorio
   OBJECT_DIR = CMakeFiles\TesiLaboratorio.dir
   OBJECT_FILE_DIR = CMakeFiles\TesiLaboratorio.dir
 
+build CMakeFiles/TesiLaboratorio.dir/TaskManager.cpp.obj: CXX_COMPILER__TesiLaboratorio_unscanned_Debug C$:/Users/loren/OneDrive/Desktop/TesiLaboratorio/TaskManager.cpp || cmake_object_order_depends_target_TesiLaboratorio
+  DEP_FILE = CMakeFiles\TesiLaboratorio.dir\TaskManager.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\TesiLaboratorio.dir
+  OBJECT_FILE_DIR = CMakeFiles\TesiLaboratorio.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target TesiLaboratorio
@@ -69,7 +75,7 @@ build CMakeFiles/TesiLaboratorio.dir/Task.cpp.obj: CXX_COMPILER__TesiLaboratorio
 #############################################
 # Link the executable TesiLaboratorio.exe
 
-build TesiLaboratorio.exe: CXX_EXECUTABLE_LINKER__TesiLaboratorio_Debug CMakeFiles/TesiLaboratorio.dir/main.cpp.obj CMakeFiles/TesiLaboratorio.dir/Task.cpp.obj
+build TesiLaboratorio.exe: CXX_EXECUTABLE_LINKER__TesiLaboratorio_Debug CMakeFiles/TesiLaboratorio.dir/main.cpp.obj CMakeFiles/TesiLaboratorio.dir/Task.cpp.obj CMakeFiles/TesiLaboratorio.dir/TaskManager.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\TesiLaboratorio.dir
