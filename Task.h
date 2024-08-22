@@ -15,11 +15,11 @@ private:
 public:
     Task(const std::string& description);
 
-    std::string getDescription() const;
-    bool isCompleted() const;
-    void markCompleted();
+    std::string GetDescription() const;
+    bool IsCompleted() const;
+    void MarkCompleted();
 
-    std::string toString() const;
+    std::string ToString() const;
 
 };
 

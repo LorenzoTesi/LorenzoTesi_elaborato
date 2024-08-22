@@ -5,18 +5,18 @@
 
 Task::Task(const std::string& description) : description(description), completed(false) {}
 
-std::string Task::getDescription() const {
+std::string Task::GetDescription() const {
     return description;
 }
 
-bool Task::isCompleted() const {
+bool Task::IsCompleted() const {
     return completed;
 }
 
-void Task::markCompleted() {
+void Task::MarkCompleted() {
     completed = true;
 }
 
-std::string Task::toString() const {
+std::string Task::ToString() const {
     return description + (completed ? " [Completata]" : " [Da fare]");
 }

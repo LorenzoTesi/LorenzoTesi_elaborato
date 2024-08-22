@@ -1,6 +1,7 @@
 #include <iostream>
-
+#include "TaskManager.h"
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+        TaskManager manager;
+        manager.Start("example.txt");
+        return 0;
 }
