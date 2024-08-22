@@ -17,6 +17,11 @@ void Task::MarkCompleted() {
     completed = true;
 }
 
-std::string Task::ToString() const {
-    return description + (completed ? " [Completata]" : " [Da fare]");
+std::string Task::GetState() const {
+    std::string state=completed?"  [Completata]":"  [Da fare]";
+    return state;
+}
+std::string Task::WriteString() const {
+
+    return description + " " + GetState();
 }

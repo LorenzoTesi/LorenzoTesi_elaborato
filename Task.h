@@ -18,10 +18,13 @@ public:
     std::string GetDescription() const;
     bool IsCompleted() const;
     void MarkCompleted();
+    std::string WriteString() const;
+    std::string GetState()const;
 
-    std::string ToString() const;
 
 };
 
 
 #endif //TESILABORATORIO_TASK_H
+
+
